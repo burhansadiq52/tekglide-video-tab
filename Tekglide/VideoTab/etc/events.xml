@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Product Video Tab
+ *
+ * @category   Tekglide
+ * @package    Tekglide_VideoTab
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="view_block_abstract_to_html_before">
+        <observer name="Tekglide_videotab_view_block_abstract_to_html_before" instance="\Tekglide\VideoTab\Observer\AbstractToHtmlBefore" />
+    </event>
+
+</config>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Product Video Tab
+ *
+ * @category   Tekglide
+ * @package    Tekglide_VideoTab
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="Tekglide" translate="label" sortOrder="550">
+            <label>Tekglide</label>
+        </tab>
+        <section id="Tekglide_video_tab" translate="label" sortOrder="200" showInDefault="1" showInStore="1" showInWebsite="1">
+            <class>separator-top</class>
+            <label>Video Tab</label>
+            <tab>Tekglide</tab>
+            <resource>Tekglide_VideoTab::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                <label>General settings</label>
+                <field id="module_enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+                    <label>Video Tab enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
+
