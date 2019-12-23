@@ -1,2 +1,2 @@
 # tekglide-video-tab
-VideoTab is a Magento 2 extesnion for adding video to your product.
+VideoTab is a Magento 2 extesnion : adding video to your product.
