@@ -1,12 +1,12 @@
 {
-  "name": "tekglide/video-tab",
+  "name": "tekglide/module-videotab",
   "description": "VideoTab extension for Magento 2 by Tekglide",
   "require": {
-    "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0",
+    "php": "~5.5.0|~5.6.0|~7.0.0|~7.1.0|~7.2.0|~7.2.22",
     "magento/framework": ">=100.0"
   },
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.4.1",
   "license": [
     "GPL-3.0"
   ],
