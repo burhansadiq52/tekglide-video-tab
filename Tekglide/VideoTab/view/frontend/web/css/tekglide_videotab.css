@@ -1,0 +1,39 @@
+.parameters {
+
+    text-align: left;
+    width: 100%;
+}
+
+.video-title {
+    font-weight: 600;
+}
+
+.video-content iframe {
+    display: block;
+}
+
+.parameters div {
+    margin-top: 10px;
+}
+
+@media only screen and (min-width: 771px) {
+    .video-content {
+        display: flex;
+    }
+    .video-embed+.parameters {
+        margin-left: 17px;
+    }
+    .parameters div:first-child{
+        margin-top: 0;
+    }
+}
+
+.video-descr ul {
+    list-style: disc;
+    padding: 0 0 0 20px;
+}
+
+.video-descr ol {
+    list-style: decimal ;
+    padding: 0 0 0 20px;
+}

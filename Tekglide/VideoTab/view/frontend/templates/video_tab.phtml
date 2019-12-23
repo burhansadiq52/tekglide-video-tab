@@ -1,0 +1,41 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Catalog\Block\Product\View */
+?>
+<?php 
+$_product = $block->getProduct();
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$product = $objectManager->create('Magento\Catalog\Model\Product')->load($_product->getId());
+?>
+<?php if($product['Tekglide_video_enabled'] == 1): ?>
+    <div class="video-content">
+        <?php if ($product['Tekglide_video_embedcode']): ?>
+            <div class="video-embed">
+                <?php /* @escapeNotVerified */ echo $product['Tekglide_video_embedcode']; ?>
+            </div>
+        <?php endif; ?>
+        <div class="parameters">
+            <?php if ($product['Tekglide_video_title']): ?>
+                <div class="video-title">
+                    <?php echo $product['Tekglide_video_title']; ?>
+                </div>
+            <?php endif; ?>
+            <?php if ($product['Tekglide_video_description']): ?>
+                <div class="video-descr">
+                    <p><?php /* @escapeNotVerified */ echo $product['Tekglide_video_description']; ?></p>
+                </div>
+            <?php endif; ?>
+            <?php if ($product['Tekglide_video_link']): ?>
+                <div class="video-link">
+                    <?php /* @escapeNotVerified */ echo '<a href="' . $product['Tekglide_video_link'] . '">' . $product['Tekglide_video_label'] . '</a>'; ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    </div>
+<?php endif; ?>

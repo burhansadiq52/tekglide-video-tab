@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Product Video Tab
+ *
+ * @category   Tekglide
+ * @package    Tekglide_VideoTab
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <tekglide_videotab>
+            <general>
+                <module_status>0</module_status>
+            </general>
+        </tekglide_videotab>
+    </default>
+</config>

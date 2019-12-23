@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="video">
+        <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="collapsible" xsi:type="boolean">true</item>
+                <item name="visible" xsi:type="boolean">true</item>
+            </item>
+        </argument>
+        <container name="container_Tekglide_video_enabled">
+            <field name="Tekglide_video_enabled">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="formElement" xsi:type="string">select</item>
+                        <item name="dataScope" xsi:type="string">Tekglide_video_enabled</item>
+                        <item name="switcherConfig" xsi:type="array">
+                            <item name="enabled" xsi:type="boolean">true</item>
+                            <item name="rules" xsi:type="array">
+                                <item name="0" xsi:type="array">
+                                    <item name="value" xsi:type="number">0</item>
+                                    <item name="actions" xsi:type="array">
+                                        <item name="0" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_title.Tekglide_video_title</item>
+                                            <item name="callback" xsi:type="string">hide</item>
+                                        </item>
+                                        <item name="1" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_embedcode.Tekglide_video_embedcode</item>
+                                            <item name="callback" xsi:type="string">hide</item>
+                                        </item>
+                                        <item name="2" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_link.Tekglide_video_link</item>
+                                            <item name="callback" xsi:type="string">hide</item>
+                                        </item>
+                                        <item name="3" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_label.Tekglide_video_label</item>
+                                            <item name="callback" xsi:type="string">hide</item>
+                                        </item>
+                                        <item name="4" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_description.Tekglide_video_description</item>
+                                            <item name="callback" xsi:type="string">hide</item>
+                                        </item>
+                                    </item>
+                                </item>
+                                <item name="1" xsi:type="array">
+                                    <item name="value" xsi:type="number">1</item>
+                                    <item name="actions" xsi:type="array">
+                                        <item name="0" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_title.Tekglide_video_title</item>
+                                            <item name="callback" xsi:type="string">show</item>
+                                        </item>
+                                        <item name="1" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_embedcode.Tekglide_video_embedcode</item>
+                                            <item name="callback" xsi:type="string">show</item>
+                                        </item>
+                                        <item name="2" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_link.Tekglide_video_link</item>
+                                            <item name="callback" xsi:type="string">show</item>
+                                        </item>
+                                        <item name="3" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_label.Tekglide_video_label</item>
+                                            <item name="callback" xsi:type="string">show</item>
+                                        </item>
+                                        <item name="4" xsi:type="array">
+                                            <item name="target" xsi:type="string">product_form.product_form.video.container_Tekglide_video_description.Tekglide_video_description</item>
+                                            <item name="callback" xsi:type="string">show</item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                        <item name="component" xsi:type="string">Tekglide_VideoTab/js/form/element/options</item>
+                    </item>
+                </argument>
+            </field>
+        </container>
+    </fieldset>
+</form>

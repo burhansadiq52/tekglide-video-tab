@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.details">
+            <block class="Magento\Catalog\Block\Product\View" name="video.tab" template="Tekglide_VideoTab::video_tab.phtml" ifconfig="Tekglide_video_tab/general/module_enabled" group="detailed_info">
+                <arguments>
+                    <argument translate="true" name="title" xsi:type="string">Video</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+    <head>
+        <css src="Tekglide_VideoTab::css/tekglide_videotab.css"/>
+    </head>
+</page>
+
+
