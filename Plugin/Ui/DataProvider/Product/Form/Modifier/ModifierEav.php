@@ -72,16 +72,22 @@ class ModifierEav extends \Magento\Framework\View\Element\Template
         );
 
         $meta = $proceed($meta);
-        if ($this->config->isEnabled('Tekglide_VideoTab') != false) {
-            unset($meta['video']);
-        }
-        if ($moduleStatus != self::MODULE_ENABLED) {
-            unset($meta['video']);
-        }
         
-        // if ($enableVal = $this->_coreRegistry->registry('current_product')->getCustomAttribute('Tekglide_video_enabled')->getValue() == 0) {
-        //     unset($meta['video']['children']['container_Tekglide_video_description']);
-        // }
+        if ($moduleStatus != self::MODULE_ENABLED) {
+            $meta["video"] = [
+                "arguments" => [
+                    "data" => [
+                        "config" => [
+                            "componentType" => "fieldset",
+                            "collapsible" => false,
+                            'opened' => false,
+                            'canShow' => false,
+                            'visible' => false
+                        ]
+                    ]
+                ]
+            ];
+        }
         return $meta;
     }
 }
