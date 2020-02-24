@@ -79,6 +79,7 @@ class ModifierEav extends \Magento\Framework\View\Element\Template
                     "data" => [
                         "config" => [
                             "componentType" => "fieldset",
+                            "label" => "",
                             "collapsible" => false,
                             'opened' => false,
                             'canShow' => false,
